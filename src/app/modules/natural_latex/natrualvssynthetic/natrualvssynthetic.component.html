@@ -1,0 +1,119 @@
+<app-header></app-header>
+
+<div id="natrualvssynthetic">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 haeding">
+        <span>NATURAL VERSUS SYNTHETIC LATEX</span>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-4">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div>
+                            <img style="width: 100%;" src="assets/natural_latex/narural/natural.jpg">
+                        </div>
+
+                        <div>
+                            <span>Natural latex is a milky substance derived from the rubber tree, Hevea brasiliensis.
+                                It consists primarily of water, latex, proteins, and various organic compounds. This
+                                material is known for its elasticity and resilience, making it a valuable resource in
+                                manufacturing products like gloves, mattresses, and balloons.</span>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+                        <div>
+                            <img style="width: 100%;" src="assets/natural_latex/narural/synthetic.jpg">
+                        </div>
+
+                        <div>
+                            <span>Synthetic latex typically contains a blend of styrene-butadiene rubber (SBR) or
+                                polybutadiene rubber (PBR) along with other synthetic chemicals. Its composition often
+                                includes petroleum-based derivatives like styrene and butadiene, formulated to mimic the
+                                properties of natural latex. </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-4" style="margin-bottom: 50px;">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+
+                    <table mat-table matSort matTableResponsive  class="mat-elevation-z8  custom-table mt-2"
+                    [dataSource]="dataSource" >
+        
+
+                    <ng-container matColumnDef="feature">
+                        <th mat-header-cell *matHeaderCellDef   style="background-color: #375c5c;font-weight: bold;color:#ffffff"> <span
+                            style="color: var(--brandcolor);">Feature</span> </th>
+                    <td mat-cell *matCellDef="let element" style="font-weight: bold;">
+                        {{element.feature}} </td>
+                    </ng-container>
+        
+        
+                    <ng-container matColumnDef="nlf">
+                        <th mat-header-cell *matHeaderCellDef    style="background-color: #375c5c;font-weight: bold;color:#ffffff"> <span
+                            style="color: var(--brandcolor);">Natural Latex Foam</span>
+                            </th>
+                            <td mat-cell *matCellDef="let element" >
+                                {{element.nlf}} </td>
+                    </ng-container>
+    
+                    <ng-container matColumnDef="slf">
+                        <th mat-header-cell *matHeaderCellDef    style="background-color: #375c5c;font-weight: bold;color:#ffffff"> <span
+                            style="color: var(--brandcolor);">Synthetic Latex Foam</span>
+                            </th>
+                            <td mat-cell *matCellDef="let element" >
+                                {{element.slf}} </td>
+                    </ng-container>
+    
+                    
+
+    
+    
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="getRowBackground(row, 'even-row', 'odd-row')"></tr>
+                </table>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<app-footer></app-footer>

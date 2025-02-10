@@ -1,0 +1,99 @@
+#natrualvssynthetic{
+
+    .haeding {
+        text-align: center;
+        color: #375c5c;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+      // //////////////////table/////////////////////////
+
+.example-container {
+    width: 98%;
+    padding-top: 10px;
+    margin-left: 13px;
+    }
+
+    .custom-table {
+    // width: %;
+    position: relative;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #1e1a1a3e;
+    }
+    .mat-mdc-cell {
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+    }
+    ::ng-deep.mat-sort-header-container {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    letter-spacing: normal;
+    outline: 0;
+    justify-content: center;
+    }
+    .custom-table tr:first-child th {
+    border-bottom: 1px solid #1e1a1a3e;
+    padding: 8px;
+    text-align: center;
+    
+    }
+    
+    .custom-table tr td:first-child,
+    .custom-table tr th:first-child,
+    .custom-table tr td:nth-child(2),
+    .custom-table tr th:nth-child(2),
+    .custom-table tr td:nth-child(3),
+    .custom-table tr th:nth-child(3),
+    .custom-table tr th:nth-child(4),
+    .custom-table tr td:nth-child(4),
+    .custom-table tr th:nth-child(5),
+    .custom-table tr td:nth-child(5),
+    .custom-table tr th:nth-child(6),
+    .custom-table tr td:nth-child(6),
+    .custom-table tr th:nth-child(7),
+    .custom-table tr td:nth-child(7),
+    .custom-table tr th:nth-child(8),
+    .custom-table tr td:nth-child(8),
+    .custom-table tr th:nth-child(9),
+    .custom-table tr td:nth-child(9),
+    .custom-table tr th:nth-child(10),
+    .custom-table tr td:nth-child(10)
+    {
+    border-right: 1px solid #1e1a1a3e;
+    padding: 8px;
+    text-align: center;
+    
+    }
+    
+    
+    
+    
+    .tablebb {
+    color: #002D73;
+    margin-left: 14vh;
+    }
+    
+    
+    table{
+    width: 50%;
+    }
+    
+    .custom-width-column2 {
+    text-align: center;
+    width: 40%;
+    
+    }
+    
+    .odd-row {
+      background-color: #f0f0f0;
+    }
+    
+    .even-row {
+      background-color: #ffffff;
+    }
+
+
+}

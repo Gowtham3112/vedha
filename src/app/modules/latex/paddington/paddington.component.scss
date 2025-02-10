@@ -1,0 +1,131 @@
+#fabric {
+
+
+    .haeding {
+        text-align: center;
+        color: #375c5c;
+        font-weight: bold;
+        font-size: 35px;
+        padding-top: 12px;
+    }
+
+    .image {
+        text-align: center;
+
+    }
+
+    .content {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .content1 {
+        font-size: 17px;
+    }
+
+//////////////////////////////////////////////////
+
+::ng-deep .mat-expansion-panel-header {
+          
+    border: 1px solid rgba(229, 229, 229, 0.3);
+    background-color: #375c5c;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+  }
+  .mat-expansion-panel-header.mat-expanded {
+    height: 50px;
+  }
+  ::ng-deep #main_form[_ngcontent-dxg-c193] .row[_ngcontent-dxg-c193] {
+    margin-right: calc(0 * var(--bs-gutter-x));
+     margin-left: auto;
+    --bs-gutter-x: 1.5rem;
+    background-color: #375c5c;
+  }
+  
+  ::ng-deep .mat-expansion-panel-header.mat-expanded:hover {
+  
+    background-color: #375c5c !important;
+    
+  }
+  ::ng-deep .mat-expansion-panel-header.mat-expanded:focus {
+  
+    background-color: #375c5c !important;
+    
+  }
+
+  ::ng-deep .mat-expansion-panel-header-title {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  ::ng-deep .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+    color:#fff;
+  }
+
+  ::ng-deep.mat-expansion-indicator::after {
+
+    border-style: solid;
+    border-width: 0px 3px 3px 0px;
+    content: "";
+    display: inline-block;
+    padding:4px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    color: #fff;
+}
+
+::ng-deep.mat-expansion-panel:not([class*="mat-elevation-z"]) {
+    box-shadow:none;
+    border: 1px solid #ddd;
+  }
+
+
+  ::ng-deep .mat-accordion .mat-expansion-panel:first-of-type {
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+  }
+
+  ::ng-deep.mat-accordion .mat-expansion-panel:last-of-type {
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+
+  .heightset{
+    height: 38pc;
+    margin-bottom: 30px;
+  }
+
+  .labelbox{
+    padding-top: 8px;
+  font-size: 16px;
+  color: #375c5c;
+  cursor: pointer;
+  }
+
+  .smallimg{
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 45px;
+  }
+
+
+  .smallrowss{
+    background: #f0f0f0;
+  padding-top: 45px;
+  border-radius: 15px;
+  }
+
+
+  .dwnlicon{
+    font-size: 47px;
+  display: contents;
+  color: #375c5c;
+  cursor: pointer;
+  }
+
+  .display12{
+    opacity: 0.5;
+    pointer-events: none;
+}
+}

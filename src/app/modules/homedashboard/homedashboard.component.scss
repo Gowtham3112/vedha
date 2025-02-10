@@ -1,0 +1,143 @@
+#home {
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .quotescss {
+        font-size: 20px;
+        font-weight: bold;
+        color: #375c5c;
+    }
+
+    .quotescss1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #b8d3d3;
+    }
+
+    .quotescss2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #375c5c;
+    }
+
+    .quotescss3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: #375c5c;
+    }
+
+    .chartbackg {
+        background: #c9c296 0% 0% no-repeat padding-box;
+        box-shadow: 0px 30px 80px #eeeaea;
+        border-radius: 8px;
+        opacity: 1;
+        // height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .cardimage {
+        width: 230px;
+    }
+
+    .background {
+        background: #375c5c 0% 0% no-repeat padding-box;
+        color: #ffffff;
+        border-radius: 0px 0px 10px 10px;
+
+    }
+
+    .tablecolor {
+        background-color: #375c5c;
+        color: #ffffff;
+        height: 37px;
+        padding-top: 5px;
+        border-radius: 2px 8px 0px 0px;
+        text-align: center;
+    }
+
+    .tablecolor1 {
+        background-color: #375c5c;
+        color: #ffffff;
+        height: 37px;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .tablecolor2 {
+        background-color: #375c5c;
+        color: #ffffff;
+        height: 49px;
+        padding-top: 13px;
+        text-align: center;
+    }
+
+    .tablecolor3 {
+        background-color: #375c5c;
+        color: #ffffff;
+        height: 40px;
+        padding-top: 5px;
+        border-radius: 2px 0px 8px 0px;
+        text-align: center;
+    }
+
+    .line {
+        width: 100%;
+        border: 1px solid #0c0b0b;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .othercompare {
+        text-align: center;
+    }
+
+    .backgroundcolor {
+        background: #375c5c 0% 0% no-repeat padding-box;
+        color: #ffffff;
+
+    }
+
+    
+    .haeding1 {
+        text-align: start;
+        color: #375c5c;
+        font-weight: bold;
+        font-size: 21px;
+
+    }
+
+    #greenText {
+        text-decoration: underline;
+        text-decoration-color: #375c5c; 
+        text-underline-offset: 0.2em; 
+        text-decoration-style: solid; 
+        text-decoration-thickness: 2px;
+    }
+
+
+    .haeding2 {
+        text-align: start;
+        color: #375c5c;
+        font-weight: bold;
+        font-size: 11px;
+
+    }
+
+    .dropmdownimage1{
+        width:100%;
+        height:100%;
+        cursor: pointer;
+    }
+
+    .display12{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

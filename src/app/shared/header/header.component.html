@@ -1,0 +1,398 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 chartbackg">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 set" >
+            <img class="logoimage" src="assets/icon/logo.png" (click)="movehoem()" style="cursor: pointer;" />
+        </div>
+
+
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 set">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 inactive" (click)="movehoem()">
+                    <button mat-button class="header" [ngClass]="{'clicked': ishomeClicked}">HOME     
+                    </button>
+
+                </div>
+
+                <!-- (mouseenter)="openMyMenu()" -->
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 inactive">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <button mat-button class="header" [matMenuTriggerFor]="product_service"
+                                [ngClass]="{'clicked': mtshow}">MATTRESSES & TOPPERS
+                                <i style="margin-left: 2px;font-size: 17px;margin-top: -3px;" class="fa fa-caret-down"
+                                    aria-hidden="true"></i>
+                            </button>
+
+
+                            <mat-menu #product_service="matMenu">
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" (click)="ZM()"
+                                        [ngClass]="{'activeabout': this.actibeMAT.zm === true,'inactiveabout': this.actibeMAT.zm !== true}">
+                                            <div>
+                                                <img class="dropmdownimage1" mat-menu-item src="assets/mattressandtoppers/5.jpg">
+                                            </div>
+                                            <div class="active1" style="text-align: center;">
+                                                <span>ZONED MATTRESS</span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" (click)="MM()"
+                                        [ngClass]="{'activeabout': this.actibeMAT.MM === true,'inactiveabout': this.actibeMAT.MM !== true}">
+                                            <div>
+                                                <img class="dropmdownimage1" mat-menu-item src="assets/mattressandtoppers/medical/1.jpg">
+                                            </div>
+                                            <div class="active1" style="text-align: center;">
+                                                <span>MEDICAL MATTRESS</span>
+                                            </div>
+                                        </div>
+                                        
+
+                                        
+                                       
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+                                    <div class="row">
+
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" (click)="EM()"
+                                        [ngClass]="{'activeabout': this.actibeMAT.EM === true,'inactiveabout': this.actibeMAT.EM !== true}">
+                                            <div>
+                                                <img class="dropmdownimage1" mat-menu-item src="assets/mattressandtoppers/embossed/1.jpg">
+                                            </div>
+                                            <div class="active1" style="text-align: center;">
+                                                <span>EMBOSSED MATTRESS</span>
+                                            </div>
+                                        </div>
+
+                                       
+                                        
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" (click)="MT()"
+                                        [ngClass]="{'activeabout': this.actibeMAT.MT === true,'inactiveabout': this.actibeMAT.MT !== true}">
+                                            <div>
+                                                <img class="dropmdownimage1" mat-menu-item src="assets/mattressandtoppers/m&t/1.jpg">
+                                            </div>
+                                            <div class="active1" style="text-align: center;">
+                                                <span>MATTRESS TOPPERS</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-3">
+                                    <div class="row">
+
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" (click)="TCM()"
+                                        [ngClass]="{'activeabout': this.actibeMAT.TCM === true,'inactiveabout': this.actibeMAT.TCM !== true}">
+                                            <div>
+                                                <img class="dropmdownimage1" mat-menu-item src="assets/mattressandtoppers/temp/3.jpg">
+                                            </div>
+                                            <!-- <div class="active1" style="text-align: center;">
+                                                <span>TEMPERATURE CONTROLED MATTRESS</span>
+                                            </div> -->
+                                        </div>
+                                       
+                                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3"></div>
+                                        
+                                        
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 active1" style="text-align: center;">
+                                    <span>TEMPERATURE CONTROLED MATTRESS</span>
+                                </div>
+
+
+                                <!-- <span mat-menu-item
+                                    [ngClass]="{'activeabout': this.actibeMAT.zm === true,'inactiveabout': this.actibeMAT.zm !== true}"
+                                    (click)="ZM()" class="bottom-border">ZONED MATTRESS</span>
+
+                                <span mat-menu-item
+                                    [ngClass]="{'activeabout': this.actibeMAT.EM === true,'inactiveabout': this.actibeMAT.EM !== true}"
+                                    (click)="EM()" class="bottom-border">EMBOSSED MATTRESS</span>
+
+                                <span mat-menu-item
+                                    [ngClass]="{'activeabout': this.actibeMAT.TCM === true,'inactiveabout': this.actibeMAT.TCM !== true}"
+                                    (click)="TCM()" class="bottom-border">TEMPERATURE CONTROLED MATTRESS</span>
+
+                                <span mat-menu-item
+                                    [ngClass]="{'activeabout': this.actibeMAT.MT === true,'inactiveabout': this.actibeMAT.MT !== true}"
+                                    (click)="MT()" class="bottom-border">MATTRESS TOPPERS</span>
+
+                                <span mat-menu-item
+                                    [ngClass]="{'activeabout': this.actibeMAT.MM === true,'inactiveabout': this.actibeMAT.MM !== true}"
+                                    (click)="MM()">MEDICAL MATTRESS</span> -->
+
+                            </mat-menu>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 inactive">
+
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <button mat-button [matMenuTriggerFor]="market" class="header"
+                                [ngClass]="{ 'select': marketClicked }">BEDDING
+                                <i style="margin-left: 2px;font-size: 17px;margin-top: -3px;" class="fa fa-caret-down"
+                                    aria-hidden="true"></i> </button>
+
+
+                            <mat-menu #market="matMenu">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"
+                                    [ngClass]="{'activeabout': this.actibeBED.bed === true,'inactiveabout': this.actibeBED.bed !== true}">
+
+                                    <div (click)="bed()">
+                                        <img class="dropmdownimage" mat-menu-item src="assets/images/bed.jpg">
+                                    </div>
+                                    <div class="active" style="text-align: center;">
+                                        <span>BEDDING</span>
+                                    </div>
+
+                                </div>
+
+
+                            </mat-menu>
+
+                            <!-- <mat-menu #market="matMenu">
+                                <span mat-menu-item [ngClass]="{'activeabout': this.actibeBED.bed === true,'inactiveabout': this.actibeBED.bed !== true}"
+                                 (click)="bed()" class="bottom-border">BEDDING</span>
+        
+                            </mat-menu> -->
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 inactive">
+                    <button mat-button class="header" [matMenuTriggerFor]="latex"  >FABRIC
+                        <i style="margin-left: 2px;font-size: 17px;margin-top: -3px;" class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
+
+                    <mat-menu #latex="matMenu">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',1]" (click)="Paddington()" mat-menu-item >Paddington</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+                                <span [routerLink]="[ '/latex',2]" (click)="Paddington()" mat-menu-item >ADORE</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',3]" (click)="Paddington()" mat-menu-item >ALPACA</span>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-12 col-lg-12" style="font-size: 16px;
+                            text-align: center;
+                            font-weight: bold;
+                            background: red;padding: 8px;"
+                            >
+                              devlopment inprogress 
+                            </div>
+
+
+                            <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" class="display" >
+                                <span [routerLink]="[ '/latex',4]" (click)="Paddington()" mat-menu-item >ANTIBES</span>
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',5]" (click)="Paddington()" mat-menu-item >CABO</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',6]" (click)="Paddington()" mat-menu-item >FAGU</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',7]" (click)="Paddington()" mat-menu-item >HENNESSY</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',8]" (click)="Paddington()" mat-menu-item >NORDIC</span>
+                            </div>
+
+                           
+                      
+                          
+           
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',9]" (click)="Paddington()" mat-menu-item >OSLO</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',10]" (click)="Paddington()" mat-menu-item >PANTHER</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',11]" (click)="Paddington()" mat-menu-item >SOHO</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',12]" (click)="Paddington()" mat-menu-item >VEGAN</span>
+                            </div>
+
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',13]" mat-menu-item >AMALFI</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',14]" mat-menu-item >ROSKY</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                         <span [routerLink]="[ '/latex',15]" mat-menu-item >XO</span>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span [routerLink]="[ '/latex',16]" mat-menu-item >EZU</span>
+                            </div> -->
+
+                            </div>
+
+                            
+                        
+                      
+                        
+                       
+          
+
+                        
+                    
+                      
+               
+                   
+                    
+                
+                       
+
+
+                        
+                        
+                    </mat-menu>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 inactive">
+                    <button mat-button class="header" [matMenuTriggerFor]="nlaetex"
+                        [ngClass]="{'clicked': isnlatexClicked}">NATURAL LATEX
+                        <i style="margin-left: 2px;font-size: 17px;margin-top: -3px;" class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </button>
+
+                    <mat-menu #nlaetex="matMenu">
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeaboutNL.outlatex === true,'inactiveabout': this.activeaboutNL.outlatex !== true}"
+                            (click)="ourlatex()" class="bottom-border">OUR LATEX</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeaboutNL.benifits === true,'inactiveabout': this.activeaboutNL.benifits !== true}"
+                            (click)="benifits()" class="bottom-border">BENEFITS OF 100% NATURAL LATEX</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeaboutNL.harvestinglatex === true,'inactiveabout': this.activeaboutNL.harvestinglatex !== true}"
+                            (click)="harvesting()" class="bottom-border">SUSTAINABLE HARVESTING OF LATEX</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeaboutNL.natural === true,'inactiveabout': this.activeaboutNL.natural !== true}"
+                            (click)="naturallatex()" class="bottom-border">NATURAL VERSUS SYNTHETIC LATEX</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeaboutNL.defects === true,'inactiveabout': this.activeaboutNL.defects !== true}"
+                            (click)="defectslatex()">DEFECTS OF NATURAL LATEX</span>
+
+                    </mat-menu>
+
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 inactive">
+                    <button mat-button class="header"  [matMenuTriggerFor]="aboutus"
+                        [ngClass]="{'clicked': isvedhaClicked}">ABOUT US
+                        <i style="margin-left: 2px;font-size: 17px;margin-top: -3px;" class="fa fa-caret-down"
+                            aria-hidden="true"></i>
+                    </button>
+
+                    <mat-menu #aboutus="matMenu">
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeabout.showvedha === true,'inaactiveabout': this.activeabout.showvedha !== true}"
+                            (click)="vedha()" class="bottom-border">VEDHA</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeabout.showsustain === true,'inaactiveabout': this.activeabout.showsustain !== true}"
+                            (click)="sustainability()" class="bottom-border">SUSTAINABILITY</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeabout.showsocial === true,'inaactiveabout': this.activeabout.showsocial !== true}"
+                            (click)="socialresponce()" class="bottom-border">SOCIAL RESPONSIBILITY</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeabout.showourprod === true,'inaactiveabout': this.activeabout.showourprod !== true}"
+                            (click)="productprocess()" class="bottom-border">OUR PRODUCTION PROCESS</span>
+
+                        <span mat-menu-item
+                            [ngClass]="{'activeabout': this.activeabout.showorg === true,'inaactiveabout': this.activeabout.showorg !== true}"
+                            (click)="organiclatex()">ORGANIC LATEX PLANTATIONS</span>
+
+                    </mat-menu>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 set pt-2" style="width: auto;">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 contacticonset">
+                    <img class="watsappimg" src="assets/icon/whatsapp.png">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contactinfo">
+                    <a style="color: #375c5c;" href="https://wa.me/9894667222" target="_blank">
+                    +91 98946 67222
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1 set pt-2" style="width: auto;">
+            <div class="row">
+
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pt-1 contacticonset1">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 contactinfo">
+                    <a style="color: #375c5c;" href="tel:+919894667222">+91 98946 67222</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
